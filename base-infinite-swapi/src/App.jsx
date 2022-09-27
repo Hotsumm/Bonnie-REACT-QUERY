@@ -1,7 +1,7 @@
 import './App.css';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { InfinitePeople } from './people/InfinitePeople';
+//import { InfinitePeople } from './people/InfinitePeople';
 import { InfiniteSpecies } from './species/InfiniteSpecies';
 
 function App() {
