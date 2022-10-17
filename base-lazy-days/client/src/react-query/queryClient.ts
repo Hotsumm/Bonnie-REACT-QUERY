@@ -1,5 +1,5 @@
 import { createStandaloneToast } from '@chakra-ui/react';
-import { QueryClient } from '@tanstack/react-query';
+import { QueryClient, QueryErrorResetBoundary } from '@tanstack/react-query';
 
 import { theme } from '../theme';
 
@@ -22,6 +22,9 @@ export const queryClient = new QueryClient({
       refetchOnMount: false,
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
+    },
+    mutations: {
+      onError: queryErrorHandler,
     },
   },
 });
